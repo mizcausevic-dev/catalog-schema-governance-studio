@@ -2,11 +2,11 @@
 
 ## Scope
 
-This repository is a **reference control plane** for catalog schema governance,
-dependency mapping, and release posture across commerce workflows. It ships
-synthetic, non-sensitive sample data only. It is not a production system of record
-and should not be deployed with real customer, order, or catalog data without an
-independent security review.
+This repository is a **reference control plane** for product-catalog schema
+governance, dependency-risk triage, and release-readiness posture across
+commerce/data workflows. It ships synthetic, non-sensitive sample data only. It
+is not a production system of record and should not be deployed with real
+catalog, schema, or customer data without an independent security review.
 
 ## Supported versions
 
@@ -31,4 +31,4 @@ We aim to acknowledge within 3 business days.
 
 ### Known / accepted advisories
 
-_None at v0.1-shipped._
+_None at v1.0-prod._

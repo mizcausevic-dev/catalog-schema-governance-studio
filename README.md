@@ -1,5 +1,11 @@
 # Catalog Schema Governance Studio
 
+[![CI](https://github.com/mizcausevic-dev/catalog-schema-governance-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/mizcausevic-dev/catalog-schema-governance-studio/actions/workflows/ci.yml)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](./LICENSE)
+[![Dependabot](https://img.shields.io/badge/dependabot-enabled-025E8C?logo=dependabot&logoColor=white)](./.github/dependabot.yml)
+[![Deploy](https://github.com/mizcausevic-dev/catalog-schema-governance-studio/actions/workflows/pages.yml/badge.svg)](https://github.com/mizcausevic-dev/catalog-schema-governance-studio/actions/workflows/pages.yml)
+
+
 TypeScript studio for catalog schema governance, merchandising dependencies, release-safe attribute changes, and buyer-facing product-data operations.
 
 ## Why this exists
@@ -62,6 +68,19 @@ Open:
 - `npm run smoke`
 - `npm run prerender`
 - `npm run render:assets`
+
+## Production status
+
+<!-- Maintained by Claude Code (Platform/SRE lane) after v1.0-prod hardening. -->
+
+| Aspect | Status |
+|--------|--------|
+| CI | Node 20 + 22 matrix — lint · typecheck · coverage · build · demo · smoke · `npm audit` ([workflow](./.github/workflows/ci.yml)) |
+| Test coverage | 100% statements on `src/services/` (gate: ≥ 60%) |
+| License | [AGPL-3.0-or-later](./LICENSE) |
+| Dependencies | Dependabot weekly (npm + GitHub Actions); `npm audit --audit-level=high` in CI |
+| Security | [SECURITY.md](./SECURITY.md) — 0 known high/critical advisories at v1.0-prod |
+| Deploy | Static prerender → **https://catalog.kineticgain.com/** (GitHub Pages, [pages workflow](./.github/workflows/pages.yml)) |
 
 ## Docs
 
